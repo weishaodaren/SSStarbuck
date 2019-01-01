@@ -1,0 +1,70 @@
+body{
+    margin:0;padding: 0;
+}
+.left_p{
+    position: fixed;;
+    left:-30px;
+    
+}
+.textBold{
+    font-weight:bolder;
+}
+li .textTop {
+    color:black;
+    font-weight: bold;
+    font-size:15px;
+    text-decoration:none;
+}
+div a.zhuCe{
+    text-decoration: none;
+}
+.div_p{
+    position: relative;
+    top:270px;
+    left:0px;
+}
+.text_p{
+    position: relative;
+    top:0px;
+    left:100px;
+}
+.starBuckGreen{
+    color:#00A862;
+    font-size:18px;
+}
+.starBuckR{
+    border: 1px solid #00A862;
+    border-radius: 48px;
+    color: #00A862;
+    font-size: 18px;
+    padding: 6px 18px;
+}
+.zhuCe_span{
+    display: block;
+    margin-top: 30px;
+}
+.img1_p{
+   position: relative;
+   top:0px;
+   left:100px;
+}
+.img2_p{
+    position: relative;
+    top:0px;
+    left:120px;
+}
+.ad_1{
+    width:1063px;
+    height:498px;
+}
+.a_hov :hover{
+    transform: scale(1.2);
+    margin-left: 10px;
+}
+.right_p{
+   position: absolute;
+   left:410px;
+}
+.carousel-control-next {
+    right: 45px;
+}
