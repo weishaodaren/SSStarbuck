@@ -5,7 +5,7 @@ USE my_pro;
 
 /*图片样式*/
 CREATE TABLE pic(
-  pid INT PRIMARY KEY AUTO_INCREMENT，
+  pid INT PRIMARY KEY AUTO_INCREMENT,
   connectPid INT,
   sm VARCHAR(128),
   md VARCHAR(128),
@@ -13,23 +13,23 @@ CREATE TABLE pic(
 );
 /*注册表*/
 CREATE TABLE star_register(
-  sid INT PRIMARY KEY AUTO_INCREMENT，
-  sname VARCHAR(16)，
-  supwd VARCHAR(32)，
-  semail VARCHAR(32)，
-  sgender BOOLEAN，
+  sid INT PRIMARY KEY AUTO_INCREMENT,
+  sname VARCHAR(16),
+  supwd VARCHAR(32),
+  semail VARCHAR(32),
+  sgender BOOLEAN,
   sphone CHAR(11)
 );
 /*菜单表咖啡*/
 CREATE TABLE star_menu_coffee(
-  coffeeId INT PRIMARY KEY AUTO_INCREMENT，
+  coffeeId INT PRIMARY KEY AUTO_INCREMENT,
   coffeeName VARCHAR(16),
   coldorhot BOOLEAN,
   coffeePrice VARCHAR(3)
 );
 /*菜单表美食*/
 CREATE TABLE star_menu_food(
-  foodId INT PRIMARY KEY AUTO_INCREMENT，
+  foodId INT PRIMARY KEY AUTO_INCREMENT,
   foodName VARCHAR(16),
   foodPrice VARCHAR(3)
 );
@@ -50,12 +50,7 @@ CREATE TABLE star_menu_food(
 /***********/
 /*插入图片信息*/
 INSERT INTO pic VALUES
-(NULL,NULL,"public/starbuck.jpg"),
-(),
-(),
-(),
-(),
-();
+(NULL,NULL,"public/starbuck.jpg","public/starbuck.jpg","public/starbuck.jpg");
 /*插入注册表信息*/
 INSERT INTO star_register VALUES
 (NULL,"Roman","roman123","215486345@sina.com",1,15821044438),
@@ -68,14 +63,14 @@ INSERT INTO star_register VALUES
 INSERT INTO star_menu_coffee VALUES
 (NULL,"美式咖啡",0,25),
 (NULL,"拿铁",0,25),
-(NULL,"摩卡",30),
+(NULL,"摩卡",0,30),
 (NULL,"卡布基诺",0,25),
 (NULL,"焦糖玛奇朵",0,25),
-(NULL,"浓缩咖啡",30),
+(NULL,"浓缩咖啡",0,30),
 (NULL,"浓郁咖啡摩卡",0,25),
 (NULL,"馥芮白",0,25),
-(NULL,"榛果风味拿铁",30),
-(NULL,"香草风味拿铁",0,25)；
+(NULL,"榛果风味拿铁",0,30),
+(NULL,"香草风味拿铁",0,25);
 /*插入菜单美食表*/
 INSERT INTO star_menu_food VALUES
 (NULL,"美式松饼",35),
@@ -91,4 +86,4 @@ INSERT INTO star_menu_food VALUES
 (NULL,"提子干松饼",35),
 (NULL,"核桃提子软法面包",35),
 (NULL,"红豆燕麦松饼",35),
-(NULL,"全麦核桃麦芬",35)；
+(NULL,"全麦核桃麦芬",35);
