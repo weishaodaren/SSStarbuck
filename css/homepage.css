@@ -1,11 +1,35 @@
 body{
     margin:0;padding: 0;
 }
-.left_p{
-    position: fixed;;
-    left:-30px;
-    
+ @media screen and (min-width:768px){
+    body{
+        background-color:#fff;
+    }
+    .div_p{ 
+        position: relative;
+        top:50%;  
+    }
+    .zhuCe_span{
+        /* display: block;
+        margin-top: 30px;  */
+         position: absolute;
+        top:150%;
+        left:-20%;
+    }
 }
+ /* @media screen and (min-width:577px) and (max-width:768px){
+    body{
+        background-color: pink;
+        width:100%;
+        height:100%;
+    }   */
+ @media screen and (max-width:576px){
+    body{
+        background-color:pink;
+        
+    }
+}
+
 .textBold{
     font-weight:bolder;
 }
@@ -18,15 +42,13 @@ li .textTop {
 div a.zhuCe{
     text-decoration: none;
 }
-.div_p{
+/* .div_p{ 
     position: relative;
-    top:270px;
-    left:0px;
-}
+    top:50%;
+
+} */
 .text_p{
-    position: relative;
-    top:0px;
-    left:100px;
+    font-weight: bold;
 }
 .starBuckGreen{
     color:#00A862;
@@ -39,10 +61,13 @@ div a.zhuCe{
     font-size: 18px;
     padding: 6px 18px;
 }
-.zhuCe_span{
+/* .zhuCe_span{
     display: block;
-    margin-top: 30px;
-}
+    margin-top: 30px; 
+     position: absolute;
+    top:10%;
+    left:10%; 
+} */
 .img1_p{
    position: relative;
    top:0px;
@@ -54,17 +79,18 @@ div a.zhuCe{
     left:120px;
 }
 .ad_1{
-    width:1063px;
-    height:498px;
+    width:100%;
+    height:100%;
 }
 .a_hov :hover{
     transform: scale(1.2);
     margin-left: 10px;
 }
-.right_p{
-   position: absolute;
-   left:410px;
+#content .nav_link_t{
+    color:black;
+    font-weight: bolder;
 }
-.carousel-control-next {
-    right: 45px;
+.logo_wh{
+    width:36px;
+    height: 36px;
 }
