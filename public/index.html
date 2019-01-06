@@ -14,8 +14,9 @@
 <body>
     <div class="container-fluid">
         <div class="row"> 
-        <div class="col-xs-12 col-md-3">
-            <div class="navbar navbar-expand-md bg-light navbar-light">
+        <div class="col-sm-12 col-md-3 border_l">
+            <div class="toFixed">
+            <div class="navbar navbar-expand-md  navbar-light">
                 <!-- 不被折叠导航选项-->
                 <a href="#" class="navbar-brand "><img src="image/logo.svg" class="logo_wh"></a>
                 <!-- 小屏幕下最右侧按钮：三条-->
@@ -34,6 +35,7 @@
                     <li class="nav-item ">
                         <a href="#" class="nav-link nav_link_t">菜单</a>
                     </li>
+                  
                 </ul>
                 </div>
             </div>
@@ -49,18 +51,24 @@
         </span>
     </div>
     </div>
+        </div>
         
-        
-        <div class="col-xs-12 col-md-9">
-            <!-- <a href="#"><img src="image/banner2.jpg" class="ad_1"></a>  -->
+        <!-- 右侧栅格嵌套 -->
+        <div class="col-sm-12 col-md-9 md_p">       
+            <!-- 广告轮播图 -->
            <div id="demo" class="carousel slide" data-ride="carousel"> 
                     <!-- 轮播图片 -->
+                    <div class="tag_ad">广告</div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="image/banner2.jpg" class="ad_1">
+                     <a href="#">
+                         <img src="image/banner2.jpg" class="ad_1">
+                        </a>
                       </div>
                       <div class="carousel-item">
-                        <img src="image/banner3.jpg" class="ad_1">
+                      <a href="#">
+                          <img src="image/banner3.jpg" class="ad_1">
+                        </a>  
                       </div>
                     </div>
 
@@ -69,6 +77,139 @@
                       <img src="image/icon-arrow-white.svg">
                     </a>
                     </div>
+                    <!-- 第一行广告图 -->
+                    <div class="row m-0">
+                        <div class="d-flex bg-light first_p">
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card bg-success">
+                                    <a href="#" class="ad_a">
+                                        <img src="image/homepage02.jpg" class="image_page">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card bg-success">
+                                    <a href="#" class="ad_a">
+                                        <img src="image/homepage03.jpg" class="image_page">
+                                    </a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card bg-success">
+                                    <a href="#">
+                                        <img src="image/homepage01.jpg" class="image_page">
+                                    </a>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                   
+                                <!-- 第二行俱乐部 -->
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 mb-3">
+                                <div class="text_padd">
+                                <span class="second_text">星享俱乐部</span>
+                                <p class="text_light pt-3">开启您的星享之旅，星星越多、会员等级越高、好礼越丰富。
+                                <a href="#" id="toknowmore">了解更多 ›</a>
+                                </p>
+                                <p class="btn_p">
+                                <a href="register.html" class="zhuCe img2_p"><span class="starBuckR">注册</span></a>
+                                <a href="register.html" class="zhuCe img2_p"><span class="starBuckR">登录</span></a>
+                                </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mb-3">
+                                <img src="image/logo-msr-new.svg" class="logo_msr">
+                            </div>
+                        </div>
+
+                        <!-- 星巴克精选 -->
+                        <div class="row m-0">
+                            <div class="col-sm-12 col-md-12 starbuck_p M_p bg-light">  
+                            <span class="second_text">星巴克精选</span>
+                            <p class="text_light pt-3">在星巴克天猫旗舰店发现更多咖啡心意</p>
+                            </div>
+                        </div>
+                        <!-- 四张会员卡礼 -->
+                        <div class="row m-0">
+                            <div class="col-sm-6 col-md-3 sm_p bg-light pb-5">
+                               <a href="#" class="line_a">
+                                   <div class="border_01 starbuck_p bg-white">
+                                   <img src="image/starcard01.jpg" class="starcard_p">
+                                <p class="third_text pt-3">会员星礼包</p>
+                                <span class="text_light">星享卡新升级</span><br>
+                                <span class="text_light">跟多新意好礼</span>
+                                <p id="toknowmore2">了解更多 ›</p>
+                                </div>
+                            </a>
+                            </div>
+                            <div class=" col-sm-6 col-md-3 sm_p bg-light">
+                                <a href="#" class="line_a">
+                                    <div class="border_01 starbuck_p bg-white">
+                                     <img src="image/starcard02.jpg" class="starcard_p">
+                                <p class="third_text pt-3">星礼卡</p>
+                                <span class="text_light">用一份星礼</span><br>
+                                <span class="text_light">让心意相随</span>
+                                <p id="toknowmore2">了解更多 ›</p>
+                                </div>
+                            </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3 sm_p bg-light">
+                                <a href="#" class="line_a">
+                                    <div class="border_01 starbuck_p bg-white">
+                                    <img src="image/starcard03.jpg" class="starcard_p">
+                                <p class="third_text pt-3">电子产品劵</p>
+                                <span class="text_light">心意</span><br>
+                                <span class="text_light">从这一杯开始</span>
+                                <p id="toknowmore2">了解更多 ›</p>
+                                </div>
+                            </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3 sm_p bg-light">
+                                <a href="#" class="line_a">
+                                    <div class="border_01 starbuck_p bg-white">
+                                    <img src="image/starcard04.jpg" class="starcard_p">
+                                <p class="third_text pt-3">咖啡生活</p>
+                                <span class="text_light">星巴克</span><br>
+                                <span class="text_light">用心制作</span>
+                                <p id="toknowmore2">了解更多 ›</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <!-- 咖啡讲堂 -->
+                        <div class="row m-0">
+                            <div class="col-sm-12 col-md-12 starbuck_p bg-white">  
+                            <span class="second_text">1912 派克街 | 咖啡星讲堂</span>
+                             <p class="text_light pt-3">了解更多星巴克咖啡文化</p>
+                             </div>
+                        </div>
+                        <!-- 底部图片三张 -->
+                        <div class="row m-0">
+                            <div class="col-sm-12 col-md-4 mb-5">
+                                <a href="#" class="line_a">
+                                <div class="back_p"></div>
+                                <span class="tag">咖啡知识</span>
+                                <p class="text_dark">咖啡的起源于培植</p>
+                               </a>
+                            </div>
+                            <div class="col-sm-12 col-md-4 mb-5">
+                                    <a href="#" class="line_a">
+                                    <div class="back_p2"></div>
+                                    <span class="tag">咖啡知识</span>
+                                    <p class="text_dark">咖啡品鉴</p>
+                                    </a>
+                            </div>
+                            <div class="col-sm-12 col-md-4 mb-5">
+                                    <a href="#" class="line_a">
+                                    <div class="back_p3"></div>
+                                    <span class="tag">咖啡知识</span>
+                                    <p class="text_dark">咖啡烘焙</p>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>    
+                        
     </div>
     </div>
     </div>
