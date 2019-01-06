@@ -14,8 +14,9 @@
 <body>
     <div class="container-fluid">
         <div class="row"> 
-        <div class="col-xs-12 col-md-3">
-            <div class="navbar navbar-expand-md bg-light navbar-light">
+        <div class="col-sm-12 col-md-3 border_l">
+          <div class="toFixed">
+            <div class="navbar navbar-expand-md navbar-light">
                 <!-- 不被折叠导航选项-->
                 <a href="#" class="navbar-brand "><img src="image/logo.svg" class="logo_wh"></a>
                 <!-- 小屏幕下最右侧按钮：三条-->
@@ -37,19 +38,49 @@
                 </ul>
                 </div>
             </div>
+            </div>
         <div class="div_p">
             <span>
             <h4 class="textBold text_p">登录或创建一个新帐户&nbsp;🌟</h4>
             </span>
-           <section>
-               <h6>登录</h6>
-           </section>
+          <ul class="list-unstyled ">
+              <li class="text_p"><a href="#">登录</a></li>
+              <li class="text_p"><a href="#">注册</a></li>
+              <li class="text_p"><a href="#">关于星享俱乐部</a></li>
+          </ul>
           
          
     </div>
     </div>
         
-        
-        <div class="col-xs-12 col-md-9">
+        <!-- 右侧 -->
+        <div class="col-sm-12 col-md-9 md_p">
+           <a href="#"><img src="image/register_header.jpg" class="w-100"></a> 
+           
+           <!-- 右侧form表单 -->
+           <div class="bg-light text-center">
+                <form action="" method="post">
+                    <input type="text" id="sname" name="sname" placeholder="用户名"><br>
+                    <input type="password" id="supwd" name="supwd" placeholder="密码"><br>  
+                    <input type="email" id="semail" name="semail" placeholder="邮箱"><br> 
+                    <input type="tel" id="sphone" name="sphone" placeholder="手机号"><br> 
+                    <input type="radio" name="sgender" id="sgender1">
+                    <label for="sgender1">男</label>
+                    <input type="radio" name="sgender" id="sgender2">
+                    <label for="sgender2">女</label><br>
+                    <input type="submit">
+                </form>
+           </div>
+
+           <!-- 底部广告 -->
+            <div class="bottom_ad">
+                <span class="b_p">
+           <h4 class="b_t">加入星享俱乐部</h4>
+           <h6 class="b_t pt-3 pb-4">只需几分钟，便可成注册星享俱乐部帐户，成为“星”会员，立即开启集星之旅。</h6>
+           <a href="#">
+               <span class="azhuce">注册</span>
+            </a>
+                </span>
+           </div>
 </body>
 </html>
