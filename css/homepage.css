@@ -2,20 +2,34 @@ body{
     margin:0;padding: 0;
 }
  @media screen and (min-width:768px){
-    body{
-        background-color:#fff;
-    }
     .div_p{ 
-        position: relative;
+        position: fixed;
         top:50%;  
     }
     .zhuCe_span{
-        /* display: block;
-        margin-top: 30px;  */
          position: absolute;
         top:150%;
         left:-20%;
     }
+    .toFixed{
+        position: fixed;
+    }
+    .card>a:hover{
+        transform: translateY(-5px);
+        transition-duration: 0.3s;
+    }
+    .line_a :hover{
+        transform: translateY(-5px);
+        transition-duration: 0.3s;
+    }
+    .border_01{
+        border: 10px dashed #998877;
+        margin-left: 25%;
+        padding-left: 1%;
+    }
+    
+  
+    
 }
  /* @media screen and (min-width:577px) and (max-width:768px){
     body{
@@ -25,8 +39,30 @@ body{
     }   */
  @media screen and (max-width:576px){
     body{
-        background-color:pink;
-        
+        clear: left;
+        margin: 0;padding: 0;
+    }
+    .text_padd{
+        padding-left: 5rem;
+        padding-top: 5%;
+    }
+    .text_light{
+        color:gray;
+        margin-left:-25%;
+    }
+    p.btn_p{
+        margin-left: -55%;
+    }
+    div>img.logo_msr{
+        padding-left: 4rem;
+        padding-top: 5%;
+    }
+    .sm_p{
+        max-width:50% ;
+    }
+    .border_01 {
+        border: 1px solid #fff;
+        margin-left: 0%;
     }
 }
 
@@ -42,11 +78,6 @@ li .textTop {
 div a.zhuCe{
     text-decoration: none;
 }
-/* .div_p{ 
-    position: relative;
-    top:50%;
-
-} */
 .text_p{
     font-weight: bold;
 }
@@ -61,13 +92,7 @@ div a.zhuCe{
     font-size: 18px;
     padding: 6px 18px;
 }
-/* .zhuCe_span{
-    display: block;
-    margin-top: 30px; 
-     position: absolute;
-    top:10%;
-    left:10%; 
-} */
+
 .img1_p{
    position: relative;
    top:0px;
@@ -82,10 +107,6 @@ div a.zhuCe{
     width:100%;
     height:100%;
 }
-.a_hov :hover{
-    transform: scale(1.2);
-    margin-left: 10px;
-}
 #content .nav_link_t{
     color:black;
     font-weight: bolder;
@@ -93,4 +114,172 @@ div a.zhuCe{
 .logo_wh{
     width:36px;
     height: 36px;
+}
+.image_page{
+    width:100%;
+    height:100%; 
+    float: left;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+.tag_ad {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0px 6px;
+    color: #fff;
+    background-color: #000;
+    font-size: 0.2rem;
+    line-height: 180%;
+    opacity: 0.6;
+    border-radius: 2px;
+    z-index: 100;
+}
+.card{
+ position: relative;
+ display: flex;
+ margin-left: 5%;
+}
+.border_l{
+    border:1px solid rgba(0, 0, 0, 0.12);
+}
+.second_text{
+    font-size: 1.3rem;
+    font-weight:normal;
+}
+.text_light{
+    color:gray;
+}
+.text_padd{
+    padding-left: 6rem;
+    padding-top: 10%;
+}
+#toknowmore{
+    color:#C2A661;
+    text-decoration: none;
+}
+.btn_p{
+    margin-left: -27%;
+    padding-top: 5%;
+}
+.logo_msr{
+    padding-left: 10rem;
+    padding-top: 20%;
+}
+.starbuck_p{
+    text-align: center;
+    padding-top: 2%;
+}
+.third_text{
+    font-size: 1rem;
+    font-weight: bold;
+    color:#000;
+}
+a.line_a{
+    text-decoration: none;
+}
+#toknowmore2{
+    color:#C2A661;
+    font-size: 0.1rem;
+    display:block;
+    padding-top:10%;
+}
+
+.starcard_p{
+   width:95px;
+   height:72px;
+}
+.bottom_p{
+    width:100%;
+    height:100%;
+}
+
+.text_dark{
+    font-size: 1rem;
+    color:#000;
+    text-align: center;
+}
+.back_p{
+    width:100%;
+    height:168px;
+    border-radius: 5%;
+    background-image: url(../image/bottom01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto 6px;
+}
+.back_p2{
+    width:100%;
+    height:168px;
+    border-radius: 5%;
+    background-image: url(../image/bottom02.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto 6px;
+}
+.back_p3{
+    width:100%;
+    height:168px;
+    border-radius: 5%;
+    background-image: url(../image/bottom03.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto 6px;
+}
+.tag{
+    border-radius: 10%;
+    font-size: 0.1rem;
+    background: #C2A661;
+    color: #FFF;
+    position: absolute;
+    padding: 4px 12px;
+    left: 15px;
+    top: 0px;
+}
+.first_p{
+    padding-top: 2%;
+    padding-bottom:2%;
+}
+.md_p{
+    margin:0;
+    padding:0;
+}
+.text_p a{
+    text-decoration:none;
+    color: #000;
+}
+.bottom_ad{
+    background-image: url(../image/register_bottom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:255px;
+    position: relative;
+}
+.b_t{
+    color:white;
+}
+.b_p{
+    position: absolute;
+    left:20%;
+    top:15%;
+}
+.azhuce{
+    border:1px solid #C2A661;
+    border-radius: 48px;
+    color: #C2A661;
+    font-size: 18px;
+    padding: 6px 18px;
+}
+.b_p a{
+    text-decoration: none;
 }
