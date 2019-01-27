@@ -13,16 +13,17 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row"> 
+        <div class="row m-0"> 
         <div class="col-sm-12 col-md-3 border_l">
             <div class="toFixed">
             <div class="navbar navbar-expand-md  navbar-light">
                 <!-- 不被折叠导航选项-->
-                <a href="#" class="navbar-brand "><img src="image/logo.svg" class="logo_wh"></a>
+                <a href="index.html" class="navbar-brand "><img src="image/logo.svg" class="logo_wh"></a>
                 <!-- 小屏幕下最右侧按钮：三条-->
                 <button class="navbar-toggler " data-toggle="collapse" data-target="#content">
                     <span class="navbar-toggler-icon "></span>
                 </button>
+            
                 <!-- 导航栏中的菜单，小屏幕隐藏，垂直显示，大屏幕横向显示-->
                 <div class="collapse navbar-collapse" id="content">
                 <ul class="navbar-nav">
@@ -30,13 +31,41 @@
                         <a href="#" class="nav-link nav_link_t">门店</a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#" class="nav-link nav_link_t">我的账户</a>
+                        <a href="register.html" class="nav-link nav_link_t">我的账户</a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#" class="nav-link nav_link_t">菜单</a>
+                        <a href="menu.html" class="nav-link nav_link_t">菜单</a>
                     </li>
                   
                 </ul>
+                 <!-- 点击事件 -->
+                 <div id="click_tit"><a href="javascript:;">
+                     <img src="image/icon-hamburger.svg">
+                     </a>
+                     <!-- 显示页面 -->
+                    <div class="bg_fix d-none">
+                            <a href="javascript:;" class="close close_p d-none">X</a>
+                        <ul class="list-unstyled">
+                            <li><a href="register.html">星享俱乐部</a></li>
+                            <li><a href="menu.html">菜单</a></li>
+                            <li><hr></li>
+                            <li><a href="#">星巴克移动应用</a></li>
+                            <li><a href="#">星巴克臻选™</a></li>
+                            <li><a href="#">专星送™</a></li>
+                            <li><a href="#">上海烘焙工坊</a></li>
+                            <li><a href="#">关于星巴克</a></li>
+                            <li><a href="#">帮助中心</a></li>
+                            <li><hr></li>
+                        </ul> 
+                       <div class="sub_p">
+                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000318" target="_blank">
+                            <img src="image/icpicon.png" class="img_police">沪公网安备 31010402000318号
+                        </a>
+                        <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action; jsessionid=V7lfBl9zMya-mVzY6wpNhd6yP2n4qSkSuof12fNJg8pV8SarthFq!-1249664274" target="_blank">
+                            沪ICP备17003747号</a>
+                        </div> 
+                    </div>
+                </div>
                 </div>
             </div>
         <div class="div_p">
@@ -56,6 +85,7 @@
         <!-- 右侧栅格嵌套 -->
         <div class="col-sm-12 col-md-9 md_p">       
             <!-- 广告轮播图 -->
+            <div class="bgi"></div><!-- 固定定位背景图-->
            <div id="demo" class="carousel slide" data-ride="carousel"> 
                     <!-- 轮播图片 -->
                     <div class="tag_ad">广告</div>
@@ -213,6 +243,6 @@
     </div>
     </div>
     </div>
- 
+ <script src="js/index.js"></script>
 </body>
 </html>

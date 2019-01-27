@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🐖星巴克 | 用每一杯咖啡传递星巴克独特的咖啡体验</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row m-0"> 
+        <div class="col-sm-12 col-md-3 border_l">
+            <div class="toFixed">
+            <div class="navbar navbar-expand-md  navbar-light">
+                <!-- 不被折叠导航选项-->
+                <a href="index.html" class="navbar-brand "><img src="image/logo.svg" class="logo_wh"></a>
+                <!-- 小屏幕下最右侧按钮：三条-->
+                <button class="navbar-toggler " data-toggle="collapse" data-target="#content">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            
+                <!-- 导航栏中的菜单，小屏幕隐藏，垂直显示，大屏幕横向显示-->
+                <div class="collapse navbar-collapse" id="content">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav_link_t">门店</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="register.html" class="nav-link nav_link_t">我的账户</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="menu.html" class="nav-link nav_link_t">菜单</a>
+                    </li>
+                  
+                </ul>
+                 <!-- 点击事件 -->
+                 <div id="click_tit"><a href="javascript:;">
+                     <img src="image/icon-hamburger.svg">
+                     </a>
+                     <!-- 显示页面 -->
+                    <div class="bg_fix d-none">
+                            <a href="javascript:;" class="close close_p d-none">X</a>
+                        <ul class="list-unstyled">
+                            <li><a href="register.html">星享俱乐部</a></li>
+                            <li><a href="menu.html">菜单</a></li>
+                            <li><hr></li>
+                            <li><a href="#">星巴克移动应用</a></li>
+                            <li><a href="#">星巴克臻选™</a></li>
+                            <li><a href="#">专星送™</a></li>
+                            <li><a href="#">上海烘焙工坊</a></li>
+                            <li><a href="#">关于星巴克</a></li>
+                            <li><a href="#">帮助中心</a></li>
+                            <li><hr></li>
+                        </ul> 
+                       <div class="sub_p">
+                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000318" target="_blank">
+                            <img src="image/icpicon.png" class="img_police">沪公网安备 31010402000318号
+                        </a>
+                        <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action; jsessionid=V7lfBl9zMya-mVzY6wpNhd6yP2n4qSkSuof12fNJg8pV8SarthFq!-1249664274" target="_blank">
+                            沪ICP备17003747号</a>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="div_p_user">
+                <span>
+                <h4 class="textBold text_p">{{早上}}好！{{用户名}}&nbsp;☕</h4>
+                <ul class="list-unstyled ml-4">
+                    <li><a class="text_light" href="#">账户一览</a></li>
+                    <li><a class="text_light" href="#">消费记录</a></li>
+                    <li><a class="text_light" href="#">星享好礼</a></li>
+                    <li><a class="text_light" href="#">管理我的账户</a></li>
+                    <li><a class="text_light" href="#">关于星享俱乐部</a></li>
+                </ul>
+            </span>
+                
+            </div>
+            </div>
+                </div>
+        
+
+              <!-- 右侧栅格嵌套 -->
+        <div class="col-sm-12 col-md-9 md_p">       
+                <div class="bgi"></div><!-- 固定定位背景图-->
+              <!--点击隐藏 显示星星内容-->  <div class="">
+                <div class="row">
+                    <div class="col col-sm-12">
+                        <div class="top_sheet_p">
+                        <button class="btn btn_l">消费记录</button>
+                        <button class="btn btn_r">星星记录</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div class="row">
+                    <div class="col col-sm-12">
+                        <p class="text_light small_txt starbuck_p">交易记录通常会在您消费后的24小时内记录到您的星享俱乐部帐户中。</p>
+                    </div>
+                </div>
+                <!-- 表格 -->
+                <table class="table_border">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>日期</td>
+                            <td>门店名称</td>
+                            <td>金额</td>
+                            <td>累积星星</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/06/16 01:20 PM</td>
+                            <td>苏州village店(Suzhou Village Store)</td>
+                            <td>¥92.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/06/07 03:54 PM</td>
+                            <td>嘉定日月光店(Jading SML Center Store)</td>
+                            <td>¥178.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018-06-07 15:48</td>
+                            <td>嘉定日月光店(Jading SML Center Store)</td>
+                            <td>¥40.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/05/27 01:41 PM</td>
+                            <td>嘉亭荟店(Jia Ting Hui-Ground Floor)</td>
+                            <td>¥73.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/04/17 04:04 PM</td>
+                            <td>嘉定日月光店(Jading SML Center Store)</td>
+                            <td>¥79.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/04/17 04:02 PM</td>
+                            <td>嘉亭荟店(Jia Ting Hui-Ground Floor)</td>
+                            <td>¥98.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/01/05 03:37 PM</td>
+                            <td>嘉定日月光店(Jading SML Center Store)</td>
+                            <td>¥78.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/01/12 04:52 PM</td>
+                            <td>嘉定罗宾森店 (Robinsons Store)</td>
+                            <td>¥108.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/01/05 03:37 PM/td>
+                            <td>嘉亭荟店(Jia Ting Hui-Ground Floor)</td>
+                            <td>¥394.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                 <!-- 文字 -->
+                 <div class="row">
+                    <div class="col col-sm-12">
+                        <p class="text_light small_txt starbuck_p">如需了解12个月之前的交易记录，请致电我们的服务热线 400-820-6998 。</p>
+                    </div>
+                                                        </div>
+                <div class="row">
+                    <div class="col col-sm-12">
+                        <div class="top_sheet_p">
+                        <button class="btn btn_l0">消费记录</button>
+                        <button class="btn btn_r0">星星记录</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 下拉选星星好礼 -->
+                
+                
+            
+                <!-- 文字 -->
+                <div class="row">
+                    <div class="col col-sm-12">
+                        <p class="text_light small_txt starbuck_p">交易记录通常会在您消费后的24小时内记录到您的星享俱乐部帐户中。</p>
+                    </div>
+                </div>
+                <!-- 表格 -->
+                <table class="table_border">
+                    <thead>
+                        <tr>
+                            <td>获取星星</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/06/16 01:20 PM</td>
+                            <td>苏州village店(Suzhou Village Store)</td>
+                            <td>¥92.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/06/07 03:54 PM</td>
+                            <td>嘉定日月光店(Jading SML Center Store)</td>
+                            <td>¥178.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018-06-07 15:48</td>
+                            <td>嘉定日月光店(Jading SML Center Store)</td>
+                            <td>¥40.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/05/27 01:41 PM</td>
+                            <td>嘉亭荟店(Jia Ting Hui-Ground Floor)</td>
+                            <td>¥73.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/04/17 04:04 PM</td>
+                            <td>嘉定日月光店(Jading SML Center Store)</td>
+                            <td>¥79.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/04/17 04:02 PM</td>
+                            <td>嘉亭荟店(Jia Ting Hui-Ground Floor)</td>
+                            <td>¥98.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/01/05 03:37 PM</td>
+                            <td>嘉定日月光店(Jading SML Center Store)</td>
+                            <td>¥78.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/01/12 04:52 PM</td>
+                            <td>嘉定罗宾森店 (Robinsons Store)</td>
+                            <td>¥108.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/user/icon-coffee-dark.svg"></td>
+                            <td>2018/01/05 03:37 PM/td>
+                            <td>嘉亭荟店(Jia Ting Hui-Ground Floor)</td>
+                            <td>¥394.00</td>
+                            <td><img  class="btn" src="./image/user/icon-info-green.svg"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <!-- 文字 -->
+                    <div class="row">
+                    <div class="col col-sm-12">
+                        <p class="text_light small_txt starbuck_p">如需了解12个月之前的交易记录，请致电我们的服务热线 400-820-6998 。</p>
+                    </div>
+                   
+          
+                        
+    </div>
+    </div>
+    </div>
+ <script src="js/index.js"></script>
+</body>
+</html>
