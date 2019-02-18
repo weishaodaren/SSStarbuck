@@ -35,6 +35,13 @@ CREATE TABLE star_menu_food(
 );
 
 
+/*登录表单*/
+CREATE TABLE star_login(
+  sid INT PRIMARY KEY AUTO_INCREMENT,
+  sname VARCHAR(25),
+  spwd  VARCHAR(32)
+);
+
 
 
 
@@ -59,6 +66,12 @@ INSERT INTO star_register VALUES
 (NULL,"李四","lisisi","15486345@126.com",0,"021-21044438"),
 (NULL,"Mark","woshishi","21545345@sina.com",1,1586444438),
 (NULL,"小吴","571571","571577557@qq.com",0,15800384178);
+
+/*插入登录信息*/
+INSERT INTO star_login VALUES
+(NULL,'tom',md5('123')),
+(NULL,'popo11',md5('5757112'));
+
 /*插入菜单咖啡表*/
 INSERT INTO star_menu_coffee VALUES
 (NULL,"美式咖啡",0,25),
