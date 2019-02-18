@@ -81,6 +81,7 @@
 </div>
                 </div>
         <!-- 右侧 -->
+        <div class="bgi"></div>
         <div class="col-sm-12 col-md-9 md_p">
         <div class="row">
             <div class="col-sm-12 col-md-12">
@@ -93,78 +94,20 @@
             <div class="col-sm-12 col-md-12"></div>
           <div class="table_p">
               <form>
-                <!-- <img src="image/logo.svg" class="img_slogo"> -->
-           <table class="mt-3 pb-2">
-               <tr>
-                   <td>
-                       <input type="text" id="sname" name="sname" placeholder="用户名">
-                    </td>
-               </tr>
-               <tr>
-                   <td class="d_none">🐷10个字符以内的字母、数字或下划线的组合</td>
-                   <td class="reg_right">✔</td>
-                   <td class="reg_fault">❌</td>
-               </tr>
-               <tr>
-                   <td>
-                       <input type="password" id="supwd" name="supwd" placeholder="密码">
-                    </td>
-                    </tr>
-                    <tr>
-                   <td class="d_none">🐷6~8个字符以内的字母、数字或下划线的组合</td>
-                   <td class="reg_right">✔</td>
-                   <td class="reg_fault">❌</td>
-               </tr>
-               <tr>
-                   <td>
-                       <input type="password" id="supwd1" name="supwd" placeholder="确认密码">
-                    </td>
-                    </tr>
-                    <tr>
-                   <td class="d_none">🐷密码保持一致</td>
-                   <td class="reg_right">✔</td>
-                   <td class="reg_fault">❌</td>
-               </tr>
-               <tr>
-                   <td>
-                       <input type="email" id="semail" name="semail" placeholder="邮箱">
-                    </td>
-               </tr>
-               <tr>
-                   <td class="d_none">🐷需要填写✔的邮箱格式</td>
-                   <td class="reg_right">✔</td>
-                   <td class="reg_fault">❌</td>
-               </tr>
-               <tr>
-                   <td>
-                       <input type="tel" id="sphone" name="sphone" placeholder="手机号">
-                    </td>
-                    </tr>
-                    <tr>
-                   <td class="d_none">🐷需要填写✔的手机号码</td>
-                   <td class="reg_right">✔</td>
-                   <td class="reg_fault">❌</td>
-               </tr>
-           </table>
-           <div class="bgi"></div>
-          
-           <div class="pb-2 form_p"> 
-                <input type="radio" name="sgender" id="sgender1" value="1" checked>
-                <label for="sgender1">男生&nbsp;&nbsp;</label>
-                <input type="radio" name="sgender" id="sgender2" value="0">
-                <label for="sgender2">女生</label>
-            </div>
+                <input type="text" id="sname" name="sname" placeholder="用户名或者电子邮箱" autofocus/><br>
+                <input type="password" id="spwd" name="spwd" placeholder="密码"/><br>
+                <input type="checkbox" value="" checked="" id="auto_login" name="checkbox">
+                <label for="auto_login">下次自动登录</label> 
+                <a href="javascript:;">忘记密码？</a>
+
             <div class="pb-3">
-                <!-- <input type="button" value="🦖注册🦏" onclick="reg_user()" class="btn_reg"> -->
-                <a href="javascript:reg_user()" class="btn btn_reg a_btn_p">🦖注册🦏</a>
-                <!-- <input type="button" value="" onclick="repeat()"> -->
-                <a href="javascript:repeat()" class="btn btn_reg">重写</a>
+                <a href="javascript:reg_login()" class="btn btn_reg a_btn_p">🦖登录🦏</a>
             </div>    
         </div>
     </form>
         </div>
            <!-- 底部广告 -->
-           <!-- <div class="row">
+           <div class="row">
                <div class="col-md-12">
             <div class="bottom_ad">
                 <span class="b_p">
@@ -176,9 +119,9 @@
                 </span>
             </div>
            </div>
-           </div> -->
+           </div>
 
-<script src="js/register.js"></script>
+<script src="js/login.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
