@@ -148,3 +148,4 @@ var sClub=sRegister.parentNode.nextElementSibling.children[0];
 sClub.onclick=function(){
     this.className="a_click";
 };
+

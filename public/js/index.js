@@ -50,3 +50,4 @@ var input_focus=document.querySelector(".input_pr");
 if(input_focus)
 // console.log(input_focus);
 input_focus.focus();
+
