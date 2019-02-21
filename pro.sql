@@ -11,8 +11,8 @@ CREATE TABLE pic(
   md VARCHAR(128),
   lg VARCHAR(128)
 );
-/*注册表*/
-CREATE TABLE star_register(
+/*用户信息表*/
+CREATE TABLE star_users(
   sid INT PRIMARY KEY AUTO_INCREMENT,
   sname VARCHAR(16),
   supwd VARCHAR(32),
@@ -35,12 +35,12 @@ CREATE TABLE star_menu_food(
 );
 
 
-/*登录表单*/
-CREATE TABLE star_login(
-  sid INT PRIMARY KEY AUTO_INCREMENT,
-  sname VARCHAR(25),
-  spwd  VARCHAR(32)
-);
+-- /*登录表单*/
+-- CREATE TABLE star_login(
+--   sid INT PRIMARY KEY AUTO_INCREMENT,
+--   sname VARCHAR(25),
+--   spwd  VARCHAR(32)
+-- );
 
 
 
@@ -58,19 +58,18 @@ CREATE TABLE star_login(
 /*插入图片信息*/
 INSERT INTO pic VALUES
 (NULL,NULL,"public/starbuck.jpg","public/starbuck.jpg","public/starbuck.jpg");
-/*插入注册表信息*/
-INSERT INTO star_register VALUES
-(NULL,"Roman","roman123","215486345@sina.com",1,15821044438),
-(NULL,"Alice","alice645","2355486345@163.com",0,13980044438),
-(NULL,"张三","zhangsan","21543256345@qq.com",1,158296569438),
-(NULL,"李四","lisisi","15486345@126.com",0,"021-21044438"),
-(NULL,"Mark","woshishi","21545345@sina.com",1,1586444438),
-(NULL,"小吴","571571","571577557@qq.com",0,15800384178);
-
-/*插入登录信息*/
-INSERT INTO star_login VALUES
-(NULL,'tom',md5('123')),
-(NULL,'popo11',md5('5757112'));
+/*插入用户表信息*/
+INSERT INTO star_users VALUES
+(NULL,"Roman",md5("roman123"),"215486345@sina.com",1,15821044438),
+(NULL,"Alice",md5("alice645"),"2355486345@163.com",0,13980044438),
+(NULL,"张三",md5("zhangsan"),"21543256345@qq.com",1,158296569438),
+(NULL,"李四",md5("lisisi"),"15486345@126.com",0,"021-21044438"),
+(NULL,"Mark",md5("12132132"),"21545345@sina.com",1,1586444438),
+(NULL,"小吴",md5("571571"),"571577557@qq.com",0,15800384178);
+-- /*插入登录信息*/
+-- INSERT INTO star_login VALUES
+-- (NULL,'tom',md5('123')),
+-- (NULL,'popo11',md5('5757112'));
 
 /*插入菜单咖啡表*/
 INSERT INTO star_menu_coffee VALUES
