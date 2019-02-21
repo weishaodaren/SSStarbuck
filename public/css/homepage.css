@@ -40,6 +40,9 @@ body{
         left: 90%;
         top: 90%
     }
+    .flex_menu:hover{
+        color:pink;
+    }
     .table_p{
         position: relative;
         left: 35%;
@@ -1140,4 +1143,87 @@ background:#fff;
     border-bottom-right-radius: 48px; 
     border: 1px solid #00A862;
     width: 20%;
+}
+.gift_ul>li{
+    background: #fff;
+}
+#tbody0>tr td:nth-child(3){
+    font-weight: bolder;
+    font-size: 25px;
+}
+.starbuck_color{
+    color: #00A862;
+}
+.btn_dropdown_p{
+    position: absolute;
+    left:15%;
+    top:8%;
+}
+.btn_dropdown_p>span{
+    font-weight:bolder;
+}
+.btn_dropdown_style{
+    border:0px;
+    background: white;
+    border-bottom: 2px solid gray;
+}
+.btn_dropdown_style:hover{
+    border-bottom: 3px solid #00A862;
+    cursor: pointer;
+}
+.dropdown-menu>li>a{
+    text-decoration-line: none;
+}
+.dropdown-menu>li>a:hover{
+    border: 1px solid #C2A661;
+    background:#C2A661;
+    color:#fff;
+}
+.div_p_user>span>ul>li>a:hover{
+    color:#000;
+}
+.div_p>ul>li>a:hover{
+    color:#000;
+}
+.iframe_s{
+    width: 100%;
+    height:800px;
+}
+.gift_h{
+    height:5rem;
+}
+#auto_login{
+    visibility: hidden;
+}
+#auto_login +label::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #00A862;
+    border-radius:8px;
+    transition: all 0.3s;
+}
+#auto_login +label::after{
+    content: "";
+    position: absolute;
+    left: 4%;
+    top: 41%;
+    width: 10px;
+    height:17px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    border-right:1px solid #fff;
+    background:#fff;
+    transform: rotate(45deg);
+}
+#auto_login:checked::before{
+    background:#00A862;
+}
+
+#auto_login:checked+label::after{
+    background:white;
+    border-color:#00A862;
 }
