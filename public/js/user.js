@@ -17,18 +17,18 @@ close.onclick=function(){
     div.classList.remove("d-none");
     click_tit.classList.remove("d-none");
 };
-//点击星星记录切换页面
-var btn_r=document.querySelector(".btn_r");
-var btn_l=document.querySelector(".btn_l0");
-var btn_l0=btn_l.parentNode.parentNode.parentNode.parentNode;
-// console.log(btn_l0);
-btn_r.onclick=function(){
-    this.parentNode.parentNode.parentNode.parentNode.classList.add("d-none");
-    btn_l0.classList.remove("d-none");
-};
-//点击返回初始页面
-btn_l.onclick=function(){
-    btn_r.parentNode.parentNode.parentNode.parentNode.classList.remove("d-none");
-    btn_l0.classList.add("d-none");
-};
-/////////////////////////////////////////////////////////////
+
+//获取当前时间 上午 下午 晚上
+var time=new Date();
+var time=time.toLocaleTimeString();
+var time=time.slice(0,2);
+// console.log(time);
+
+//从session获取用户名 
+var sname=localStorage.getItem("sname");
+var username=div.firstElementChild.firstElementChild;
+// console.log(username);
+var html=time+"好！  "+sname+"  ☕";
+username.innerHTML=html;
+
+

@@ -4,14 +4,15 @@ function reg_login(){
     xhr.onreadystatechange=function(){
         if(xhr.readyState==4&&xhr.status==200){
            var result=xhr.responseText;
+            result=JSON.parse(result);
             // console.log(result);
-            console.log(result.slice(8,9));
-            var res_i=result.slice(8,9);
-            // 判断密码是否为正确
-            if(res_i==1){
-                 location.replace('http://127.0.0.1:3001/index.html')
+            // console.log(result.slice(8,9));
+            //判断密码是否为正确
+            if(result.code==1){
+                 location.replace('http://127.0.0.1:3001/user.html')
              }else{
                 alert(`用户名或密码有误`);
+                console.log(result);
             };
         }
     }
@@ -20,10 +21,17 @@ function reg_login(){
 };
 // 绑定回车
 document.onkeyup=function(e){
-    console.log(e.keyCode);
-    // e=e||window.event;
-    // e.preventDefault();
+    // console.log(e.keyCode);
     if(e.keyCode==13){
         reg_login();
     }
 };
+
+//登录 获取用户名存入session
+var sname=document.getElementById("sname");
+var btn=document.querySelector(".btn");
+// console.log(btn);
+btn.onclick=function(){
+    localStorage.setItem("sname",sname.value);
+};
+

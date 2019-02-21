@@ -3,8 +3,13 @@
         xhr.onreadystatechange=function(){
             if(xhr.readyState==4&&xhr.status==200){
                 var result=xhr.responseText;
-               // var user=JSON.parse(result);
-                console.log(result);
+                var user=JSON.parse(result);
+                console.log(user);
+                if(user.code==200){
+                location.replace("http://127.0.0.1:3001/user.html");
+                }else{
+                    alert(`注册信息有误`);
+                }
             }
         }
          xhr.open("post","/user/register",true);
@@ -20,6 +25,14 @@
         //console.log(formdata);
         xhr.send(formdata);
     }
+
+//注册 获取用户名存入session
+var btn=document.querySelector(".btn");
+// console.log(btn);
+btn.onclick=function(){
+    localStorage.setItem("sname",sname.value);
+};
+
 
     //用户名密码框鼠标获取焦点事件 
     var txtName=document.getElementsByName("sname")[0];
@@ -39,7 +52,7 @@
     var tdName=document.getElementsByClassName("reg_right")[0];
     var F_tdName=tdName.nextElementSibling;
    txtName.onblur=function(){
-    var regName=/^\w{1,10}$/;
+    var regName=/^[\u4e00-\u9fa5]{1,6}$/;
 if(regName.test(txtName.value)){
        tdName.className="";
        F_tdName.className="reg_fault";
