@@ -42,6 +42,7 @@
                  <div id="click_tit"><a href="javascript:;">
                      <img src="image/icon-hamburger.svg">
                      </a>
+                    
                      <!-- 显示页面 -->
                     <div class="bg_fix d-none">
                             <a href="javascript:;" class="close close_p d-none">X</a>
@@ -72,8 +73,8 @@
                 <span>
                 <h4 class="textBold text_p">{{早上}}好！{{用户名}}&nbsp;☕</h4>
                 <ul class="list-unstyled ml-4">
-                    <li><a class="text_light" href="#">账户一览</a></li>
-                    <li><a class="text_light" href="#">消费记录</a></li>
+                    <li><a class="text_light" href="user.html">账户一览</a></li>
+                    <li><a class="text_light" href="shopping_sheet.html">消费记录</a></li>
                     <li><a class="text_light" href="#">星享好礼</a></li>
                     <li><a class="text_light" href="#">管理我的账户</a></li>
                     <li><a class="text_light" href="#">关于星享俱乐部</a></li>
@@ -347,6 +348,22 @@
     </div>
     </div>
     </div>
+    <script>
+            //点击星星记录切换页面
+        var btn_r=document.querySelector(".btn_r");
+        var btn_l=document.querySelector(".btn_l0");
+        var btn_l0=btn_l.parentNode.parentNode.parentNode.parentNode;
+        // console.log(btn_l0);
+        btn_r.onclick=function(){
+            this.parentNode.parentNode.parentNode.parentNode.classList.add("d-none");
+            btn_l0.classList.remove("d-none");
+        };
+        //点击返回初始页面
+        btn_l.onclick=function(){
+            btn_r.parentNode.parentNode.parentNode.parentNode.classList.remove("d-none");
+            btn_l0.classList.add("d-none");
+        };
+        </script>
  <script src="js/user.js"></script>
 </body>
 </html>
