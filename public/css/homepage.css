@@ -1,6 +1,7 @@
 body{
     margin:0;padding: 0;
 }
+/* 媒体查询 大屏 */
  @media screen and (min-width:900px){
     .div_p{ 
         position: fixed;
@@ -45,7 +46,7 @@ body{
     }
     .table_p{
         position: relative;
-        left: 35%;
+        left: 27%;
         top: 1%;
     }
     .click_page {
@@ -66,6 +67,7 @@ body{
  
     
 }
+/* 中屏 */
   @media screen and (min-width:577px) and (max-width:891px){
     body{
         clear: left;
@@ -127,7 +129,7 @@ body{
   } 
 
 }
-
+/* 小屏 */
 @media screen and (max-width:571px){ 
     body{
         clear: left;
@@ -454,11 +456,40 @@ a.line_a{
     display:none;
 }
 .btn_reg{
-    border:3px solid #C2A661;
-    color: #00A862;
+    border:3px solid #fff;
+    border-radius: 48px;
+    position: relative;
+    left: 10%;
+    top: 60px;
+    transform: scale(1.1)
+}
+.btn_login{
+    border:3px solid #fff;
+    border-radius: 48px;
+    position: relative;
+    left: 80%;
+    top: 60px;
+    transform: scale(1.1)
+}
+.btn_login:hover{
+    transition:all 0.1s;
+    transform:scale(1.2);
+}
+.btn_reg:hover{
+    transition:all 0.1s;
+    transform:scale(1.2);
 }
 .a_btn_p{
     margin: 1%;
+    color:gray;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38);
+    margin-bottom: 4px;
+}
+.a_btn_p1{
+    margin: 1%;
+    color:gray;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38);
+    margin-bottom: 4px;
 }
 .drink_bold{
     font-weight: bolder;
@@ -488,6 +519,7 @@ a.line_a{
     display: inline-block;
     margin: 0 auto 6px;
 }
+/* 商品图片 */
 .pro_pic01{
     background-image: url("../image/products/drink/affogato.jpg");
 }
@@ -1199,7 +1231,7 @@ background:#fff;
     content: "";
     position: absolute;
     left: 0%;
-    top: 40%;
+    top: 63%;
     width: 25px;
     height: 25px;
     border: 1px solid #00A862;
@@ -1209,21 +1241,46 @@ background:#fff;
 #auto_login +label::after{
     content: "";
     position: absolute;
-    left: 4%;
-    top: 41%;
+    left: 2%;
+    top: 64%;
     width: 10px;
     height:17px;
     border: 0;
     border-bottom: 1px solid #fff;
     border-right:1px solid #fff;
-    background:#fff;
+    background:white;
     transform: rotate(45deg);
 }
 #auto_login:checked::before{
-    background:#00A862;
+    background:white;
 }
 
 #auto_login:checked+label::after{
     background:white;
     border-color:#00A862;
 }
+.forget_pd{
+    margin-left:52%;
+}
+a[class="forget_pd"]{
+    text-decoration-line: none;
+    color: #00A862;
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="tel"]{
+    border-top: none;
+    border-left:none;
+    border-right: none; 
+    border-bottom: 1px solid #998877;
+    width: 450px;
+    height: 50px;
+    outline: none;
+}
+/* input[type="password"]{
+    border-top: none;
+    border-left:none;
+    border-right: none; 
+    border-bottom: 1px solid #998877;
+    width: 450px;
+    height: 50px;
+    outline:none; 
+} */
