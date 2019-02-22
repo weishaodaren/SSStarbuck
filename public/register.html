@@ -89,7 +89,7 @@
         </div>
         
         <!-- 表单 -->
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-sm-12 col-md-12"></div>
           <div class="table_p">
               <form>
@@ -97,7 +97,7 @@
            <table class="mt-3 pb-2">
                <tr>
                    <td>
-                       <input type="text" id="sname" name="sname" placeholder="用户名">
+                       <input type="text" id="sname" name="sname" placeholder="用户名" maxlength="6"/>
                     </td>
                </tr>
                <tr>
@@ -107,7 +107,7 @@
                </tr>
                <tr>
                    <td>
-                       <input type="password" id="supwd" name="supwd" placeholder="密码">
+                       <input type="password" id="supwd" name="supwd" placeholder="密码" maxlength="8"/>
                     </td>
                     </tr>
                     <tr>
@@ -117,7 +117,7 @@
                </tr>
                <tr>
                    <td>
-                       <input type="password" id="supwd1" name="supwd" placeholder="确认密码">
+                       <input type="password" id="supwd1" name="supwd" placeholder="确认密码" maxlength="8"/>
                     </td>
                     </tr>
                     <tr>
@@ -127,7 +127,7 @@
                </tr>
                <tr>
                    <td>
-                       <input type="email" id="semail" name="semail" placeholder="邮箱">
+                       <input type="email" id="semail" name="semail" placeholder="邮箱" maxlength="30"/>
                     </td>
                </tr>
                <tr>
@@ -137,7 +137,7 @@
                </tr>
                <tr>
                    <td>
-                       <input type="tel" id="sphone" name="sphone" placeholder="手机号">
+                       <input type="tel" id="sphone" name="sphone" placeholder="手机号" maxlength="11"/>
                     </td>
                     </tr>
                     <tr>
@@ -154,9 +154,9 @@
                 <input type="radio" name="sgender" id="sgender2" value="0">
                 <label for="sgender2">女生</label>
             </div>
-            <div class="pb-3">
+            <div class="pb-5 mb-5">
                 <!-- <input type="button" value="🦖注册🦏" onclick="reg_user()" class="btn_reg"> -->
-                <a href="javascript:reg_user()" class="btn btn_reg a_btn_p">🦖注册🦏</a>
+                <a href="javascript:reg_user()" class="btn btn_reg a_btn_p1">🦖注册🦏</a>
                 <!-- <input type="button" value="" onclick="repeat()"> -->
                 <a href="javascript:repeat()" class="btn btn_reg">重写</a>
             </div>    
