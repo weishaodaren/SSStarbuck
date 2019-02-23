@@ -31,7 +31,7 @@
                         <a href="#" class="nav-link nav_link_t">门店</a>
                     </li>
                     <li class="nav-item ">
-                        <a href="register.html" class="nav-link nav_link_t">我的账户</a>
+                        <a href="login.html" class="nav-link nav_link_t" id="my_count">我的账户</a>
                     </li>
                     <li class="nav-item ">
                         <a href="menu.html" class="nav-link nav_link_t">菜单</a>
@@ -46,7 +46,7 @@
                     <div class="bg_fix d-none">
                             <a href="javascript:;" class="close close_p d-none">X</a>
                         <ul class="list-unstyled">
-                            <li><a href="register.html">星享俱乐部</a></li>
+                            <li><a href="javascript:logout()">退出</a></li>
                             <li><a href="menu.html">菜单</a></li>
                             <li><hr></li>
                             <li><a href="#">星巴克移动应用</a></li>
@@ -70,9 +70,9 @@
             </div>
         <div class="div_p">
             <span>
-            <h4 class="textBold text_p">心情惬意，来杯咖啡吧&nbsp;☕</h4>
-        </span>
-            <span class="zhuCe_span">
+            <h4 class="textBold text_p" id="user_status">心情惬意，来杯咖啡吧&nbsp;☕</h4>
+            </span>
+            <span class="zhuCe_span" id="user_name">
             <a href="login.html" class="zhuCe img1_p"><img src="image/zhuce.JPG">
             <span class="starBuckGreen">登录</span>
           </a>
@@ -112,14 +112,14 @@
                         <div class="d-flex bg-light first_p">
                             <div class="col-sm-12 col-md-4">
                                 <div class="card bg-success">
-                                    <a href="#" class="ad_a">
+                                    <a href="menu.html" class="ad_a">
                                         <img src="image/homepage02.jpg" class="image_page">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <div class="card bg-success">
-                                    <a href="#" class="ad_a">
+                                    <a href="menu.html" class="ad_a">
                                         <img src="image/homepage03.jpg" class="image_page">
                                     </a>
                                     </div>
@@ -163,7 +163,7 @@
                         <!-- 四张会员卡礼 -->
                         <div class="row m-0">
                             <div class="col-sm-6 col-md-3 sm_p bg-light pb-5">
-                               <a href="#" class="line_a">
+                               <a href="menu.html" class="line_a">
                                    <div class="border_01 starbuck_p bg-white">
                                    <img src="image/starcard01.jpg" class="starcard_p">
                                 <p class="third_text pt-3">会员星礼包</p>
@@ -174,7 +174,7 @@
                             </a>
                             </div>
                             <div class=" col-sm-6 col-md-3 sm_p bg-light">
-                                <a href="#" class="line_a">
+                                <a href="menu_coffee.html" class="line_a">
                                     <div class="border_01 starbuck_p bg-white">
                                      <img src="image/starcard02.jpg" class="starcard_p">
                                 <p class="third_text pt-3">星礼卡</p>
@@ -185,7 +185,7 @@
                             </a>
                             </div>
                             <div class="col-sm-6 col-md-3 sm_p bg-light">
-                                <a href="#" class="line_a">
+                                <a href="menu_food.html" class="line_a">
                                     <div class="border_01 starbuck_p bg-white">
                                     <img src="image/starcard03.jpg" class="starcard_p">
                                 <p class="third_text pt-3">电子产品劵</p>
@@ -196,7 +196,7 @@
                             </a>
                             </div>
                             <div class="col-sm-6 col-md-3 sm_p bg-light">
-                                <a href="#" class="line_a">
+                                <a href="menu_coffee.html" class="line_a">
                                     <div class="border_01 starbuck_p bg-white">
                                     <img src="image/starcard04.jpg" class="starcard_p">
                                 <p class="third_text pt-3">咖啡生活</p>
@@ -217,21 +217,21 @@
                         <!-- 底部图片三张 -->
                         <div class="row m-0">
                             <div class="col-sm-12 col-md-4 mb-5">
-                                <a href="#" class="line_a">
+                                <a href="menu.html" class="line_a">
                                 <div class="back_p"></div>
                                 <span class="tag">咖啡知识</span>
                                 <p class="text_dark">咖啡的起源于培植</p>
                                </a>
                             </div>
                             <div class="col-sm-12 col-md-4 mb-5">
-                                    <a href="#" class="line_a">
+                                    <a href="menu.html" class="line_a">
                                     <div class="back_p2"></div>
                                     <span class="tag">咖啡知识</span>
                                     <p class="text_dark">咖啡品鉴</p>
                                     </a>
                             </div>
                             <div class="col-sm-12 col-md-4 mb-5">
-                                    <a href="#" class="line_a">
+                                    <a href="menu.html" class="line_a">
                                     <div class="back_p3"></div>
                                     <span class="tag">咖啡知识</span>
                                     <p class="text_dark">咖啡烘焙</p>
@@ -243,6 +243,28 @@
     </div>
     </div>
     </div>
+    <script>
+// 获取session 改写用户名
+// console.log(div);
+var p1=document.getElementById("user_status");
+var p2=document.getElementById("user_name");
+// console.log(p2);
+var sname=sessionStorage.getItem("sname");
+// console.log(sname);
+var my_count=document.getElementById("my_count");
+// console.log(my_count.href);
+//心情标语 数组
+var chars=["人生得意须尽欢 😊","今天的心情是茶 🍵呢?","咖啡带给你好心情 ❤️","咖啡会让你脑洞大开哟 ☕",
+"微笑一下,每天都是 😀","春风十里不如你 💕","来杯咖啡换首心情 🎶"];
+
+//随机生成心情标语 
+var html=chars[Math.floor(Math.random()*chars.length)];
+if(sname){
+    p1.innerHTML=html;
+    p2.innerHTML=`<h4>&nbsp;&nbsp;&nbsp;&nbsp;⭐${sname}</h4>`;
+    my_count.href="http://127.0.0.1:3001/user.html"
+};
+    </script>
  <script src="js/index.js"></script>
 </body>
 </html>

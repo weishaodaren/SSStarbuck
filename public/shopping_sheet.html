@@ -31,7 +31,7 @@
                         <a href="#" class="nav-link nav_link_t">门店</a>
                     </li>
                     <li class="nav-item ">
-                        <a href="register.html" class="nav-link nav_link_t">我的账户</a>
+                        <a href="login.html" class="nav-link nav_link_t" id="my_count">我的账户</a>
                     </li>
                     <li class="nav-item ">
                         <a href="menu.html" class="nav-link nav_link_t">菜单</a>
@@ -47,7 +47,7 @@
                     <div class="bg_fix d-none">
                             <a href="javascript:;" class="close close_p d-none">X</a>
                         <ul class="list-unstyled">
-                            <li><a href="register.html">星享俱乐部</a></li>
+                            <li><a href="javascript:logout()">退出</a></li>
                             <li><a href="menu.html">菜单</a></li>
                             <li><hr></li>
                             <li><a href="#">星巴克移动应用</a></li>
@@ -75,7 +75,7 @@
                 <ul class="list-unstyled ml-4">
                     <li><a class="text_light" href="user.html">账户一览</a></li>
                     <li><a class="text_light" href="shopping_sheet.html">消费记录</a></li>
-                    <li><a class="text_light" href="#">星享好礼</a></li>
+                    <li><a class="text_light" href="user_gifts.html">星享好礼</a></li>
                     <li><a class="text_light" href="#">管理我的账户</a></li>
                     <li><a class="text_light" href="#">关于星享俱乐部</a></li>
                 </ul>
@@ -365,5 +365,14 @@
         };
         </script>
  <script src="js/user.js"></script>
+ <script>
+ // 获取session 改写用户名
+ var sname=sessionStorage.getItem("sname");
+//  console.log(sname);
+ var my_count=document.getElementById("my_count");
+ if(sname){
+     my_count.href="http://127.0.0.1:3001/user.html"
+ };
+ </script>
 </body>
 </html>

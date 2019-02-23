@@ -31,7 +31,7 @@
             <a href="#" class="nav-link nav_link_t">门店</a>
         </li>
         <li class="nav-item ">
-            <a href="register.html" class="nav-link nav_link_t">我的账户</a>
+            <a href="register.html" class="nav-link nav_link_t" id="my_count">我的账户</a>
         </li>
         <li class="nav-item ">
             <a href="menu.html" class="nav-link nav_link_t">菜单</a>
@@ -46,7 +46,7 @@
             <div class="bg_fix d-none">
                     <a href="javascript:;" class="close close_p d-none">X</a>
                 <ul class="list-unstyled">
-                    <li><a href="register.html">星享俱乐部</a></li>
+                    <li><a href="javascript:logout()">退出</a></li>
                     <li><a href="menu.html">菜单</a></li>
                     <li><hr></li>
                     <li><a href="javascript:;">星巴克移动应用</a></li>
@@ -93,7 +93,6 @@
             <div class="col-sm-12 col-md-12"></div>
           <div class="table_p">
               <form>
-                <!-- <img src="image/logo.svg" class="img_slogo"> -->
            <table class="mt-3 pb-2">
                <tr>
                    <td>
@@ -150,34 +149,17 @@
           
            <div class="pb-2 form_p"> 
                 <input type="radio" name="sgender" id="sgender1" value="1" checked>
-                <label for="sgender1">男生&nbsp;&nbsp;</label>
+                <label for="sgender1" class="mr-5 pr-5">男生&nbsp;&nbsp;</label>
                 <input type="radio" name="sgender" id="sgender2" value="0">
                 <label for="sgender2">女生</label>
             </div>
             <div class="pb-5 mb-5">
-                <!-- <input type="button" value="🦖注册🦏" onclick="reg_user()" class="btn_reg"> -->
                 <a href="javascript:reg_user()" class="btn btn_reg a_btn_p1">🦖注册🦏</a>
-                <!-- <input type="button" value="" onclick="repeat()"> -->
                 <a href="javascript:repeat()" class="btn btn_reg">重写</a>
             </div>    
         </div>
     </form>
         </div>
-           <!-- 底部广告 -->
-           <!-- <div class="row">
-               <div class="col-md-12">
-            <div class="bottom_ad">
-                <span class="b_p">
-           <h4 class="b_t">加入星享俱乐部</h4>
-           <h6 class="b_t pt-3 pb-4">只需几分钟，便可成注册星享俱乐部帐户，成为“星”会员，立即开启集星之旅。</h6>
-           <a href="javascript:;">
-               <span class="azhuce">注册</span>
-            </a>
-                </span>
-            </div>
-           </div>
-           </div> -->
-
 <script src="js/register.js"></script>
 <script src="js/index.js"></script>
 </body>
