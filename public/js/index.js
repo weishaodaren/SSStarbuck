@@ -51,3 +51,38 @@ if(input_focus)
 // console.log(input_focus);
 input_focus.focus();
 
+// 登出 清除session缓存
+function logout(){
+    sessionStorage.clear();
+    location.replace("http://127.0.0.1:3001");
+  
+};
+// 获取session 改写用户名
+var sname=sessionStorage.getItem("sname");
+//  console.log(sname);
+ var my_count=document.getElementById("my_count");
+ if(sname){
+     my_count.href="http://127.0.0.1:3001/user.html"
+ };
+
+// // 获取session 改写用户名
+// // console.log(div);
+// var p1=document.getElementById("user_status");
+// var p2=document.getElementById("user_name");
+// // console.log(p2);
+// var sname=sessionStorage.getItem("sname");
+// // console.log(sname);
+// var my_count=document.getElementById("my_count");
+// // console.log(my_count.href);
+// //心情标语 数组
+// var chars=["人生得意须尽欢 😊","今天的心情是茶 🍵呢?","咖啡带给你好心情 ❤️","咖啡会让你脑洞大开      哟 ☕",
+// "微笑一下,每天都是 😀","春风十里不如你 💕","来杯咖啡换首心情 🎶"];
+
+// //随机生成心情标语 
+// var html=chars[Math.floor(Math.random()*chars.length)];
+// if(sname){
+//     p1.innerHTML=html;
+//     p2.innerHTML=`<h4>&nbsp;&nbsp;&nbsp;&nbsp;⭐${sname}</h4>`;
+//     my_count.href="http://127.0.0.1:3001/user.html"
+// };
+

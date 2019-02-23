@@ -25,10 +25,14 @@ var time=time.slice(0,2);
 // console.log(time);
 
 //从session获取用户名 
-var sname=localStorage.getItem("sname");
+var sname=sessionStorage.getItem("sname");
 var username=div.firstElementChild.firstElementChild;
 // console.log(username);
-var html=time+"好！  "+sname+"  ☕";
+var html=time+"好！  "+sname+"  🙌";
 username.innerHTML=html;
 
-
+// 登出 清除session缓存
+function logout(){
+    sessionStorage.clear();
+    location.replace("http://127.0.0.1:3001");
+};

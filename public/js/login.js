@@ -32,6 +32,6 @@ var sname=document.getElementById("sname");
 var btn=document.querySelector(".btn");
 // console.log(btn);
 btn.onclick=function(){
-    localStorage.setItem("sname",sname.value);
+    sessionStorage.setItem("sname",sname.value);
 };
 
