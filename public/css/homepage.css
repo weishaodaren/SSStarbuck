@@ -1237,6 +1237,7 @@ background:#fff;
     border: 1px solid #00A862;
     border-radius:8px;
     transition: all 0.3s;
+    
 }
 #auto_login +label::after{
     content: "";
@@ -1250,14 +1251,19 @@ background:#fff;
     border-right:1px solid #fff;
     background:white;
     transform: rotate(45deg);
+    display: none;
 }
 #auto_login:checked::before{
     background:white;
+    /* display: none; */
+ 
+    
 }
 
 #auto_login:checked+label::after{
     background:white;
     border-color:#00A862;
+    display: block;
 }
 .forget_pd{
     margin-left:52%;
