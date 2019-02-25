@@ -1,4 +1,5 @@
-    function reg_user(){
+ //ajax发送get请求
+        function reg_user(){
         var xhr=new XMLHttpRequest();
         xhr.onreadystatechange=function(){
             if(xhr.readyState==4&&xhr.status==200){
@@ -10,6 +11,7 @@
                 }else{
                     alert(`注册信息有误`);
                 }
+                
             }
         }
          xhr.open("post","/user/register",true);
@@ -19,19 +21,25 @@
        }else{
         sgender=0;
        }
-        var formdata="sname="+sname.value+"&supwd="+supwd.value+"&semail="+semail.value+"&sphone="+sphone.value+"&sgender="+sgender.value;
+        sname=document.getElementById("sname");
+        supwd=document.getElementById("supwd");
+        semail=document.getElementById("semail");
+        sphone=document.getElementById("sphone");
+        sgender=document.querySelectorAll(".sgender");
+         var formdata="sname="+sname.value+"&supwd="+supwd.value+"&semail="+semail.value+"&sphone="+sphone.value+"&sgender="+sgender.value;
         //设置请求头
         xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         //console.log(formdata);
         xhr.send(formdata);
+        sessionStorage.setItem("sname",sname.value);
+        console.log(sname.value);
     }
 
 //注册 获取用户名存入session
-var btn=document.querySelector(".btn");
-// console.log(btn);
-btn.onclick=function(){
-    localStorage.setItem("sname",sname.value);
-};
+// var btn=document.querySelector(".btn");
+// btn.onclick=function(){
+//     sessionStorage.setItem("sname",sname.value);
+// };
 
 
     //用户名密码框鼠标获取焦点事件 
@@ -71,7 +79,7 @@ txtName.onclick=function(){
     var tdPwd=document.getElementsByClassName("reg_right")[1];
     var F_tdPwd=tdPwd.nextElementSibling;
    txtPwd.onblur=function(){
-    var regPwd=/^\w{6,8}$/;
+    var regPwd=/[a-z]+[0-9_-]+/i;
 if(regPwd.test(txtPwd.value)){
        tdPwd.className="";
        F_tdPwd.className="reg_fault";

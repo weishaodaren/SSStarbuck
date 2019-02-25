@@ -16,8 +16,12 @@ function reg_login(){
             };
         }
     }
+    sname=document.getElementById("sname");
+    spwd=document.getElementById("spwd");
      xhr.open("get","/user/login?sname="+sname.value+"&spwd="+spwd.value,true);
      xhr.send(null);
+     sessionStorage.setItem("sname",sname.value);
+     console.log(sname.value);
 };
 // 绑定回车
 document.onkeyup=function(e){
@@ -28,10 +32,9 @@ document.onkeyup=function(e){
 };
 
 //登录 获取用户名存入session
-var sname=document.getElementById("sname");
-var btn=document.querySelector(".btn");
-// console.log(btn);
-btn.onclick=function(){
-    sessionStorage.setItem("sname",sname.value);
-};
+// var btn=document.querySelector(".btn");
+// // console.log(btn);
+// btn.onclick=function(){
+//     sessionStorage.setItem("sname",sname.value);
+// };
 
