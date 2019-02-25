@@ -25,10 +25,11 @@ var time=time.slice(0,2);
 // console.log(time);
 
 //从session获取用户名 
-var sname=sessionStorage.getItem("sname");
+var sname1=sessionStorage.getItem("sname");
+console.log(sname1);
 var username=div.firstElementChild.firstElementChild;
 // console.log(username);
-var html=time+"好！  "+sname+"  🙌";
+var html=time+"好！  "+sname1+"  🙌";
 username.innerHTML=html;
 
 // 登出 清除session缓存
