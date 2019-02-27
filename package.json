@@ -1,0 +1,31 @@
+{
+  "name": "ssstarbuck",
+  "version": "1.0.0",
+  "description": "coffee,starbusk,星巴克,咖啡",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weishaodaren/SSStarbuck.git"
+  },
+  "keywords": [
+    "starbuck",
+    "星巴克",
+    "coffee",
+    "咖啡"
+  ],
+  "author": "Zhao JiaWei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weishaodaren/SSStarbuck/issues"
+  },
+  "homepage": "https://github.com/weishaodaren/SSStarbuck#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
