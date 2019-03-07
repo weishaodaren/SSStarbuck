@@ -1,5 +1,12 @@
 # 原生JS仿写星巴克中国网站
 **Mysql / Node.js / H5 / CSS / Bootstrap / JavaScript / Ajax**
+>Mysql
+> / Node.js
+> / H5
+> / CSS
+> / Bootstrap
+> / Javascript
+> / Ajax
 
         
 
