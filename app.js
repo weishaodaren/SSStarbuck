@@ -5,7 +5,7 @@ const productsRouter=require("./router/products");
 
 //创建web服务器
 var server=express();
-server.listen((3001),()=>{
+server.listen((5050),()=>{  //配合新浪云 改端口
     console.log(`服务器启动...全体人员注意...`)
 });
 //托管静态资源

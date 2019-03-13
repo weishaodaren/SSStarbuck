@@ -1,3 +1,4 @@
+export default function xbk_login(){
 // 登录ajax
 function reg_login(){
     var xhr=new XMLHttpRequest();
@@ -38,3 +39,4 @@ document.onkeyup=function(e){
 //     sessionStorage.setItem("sname",sname.value);
 // };
 
+};

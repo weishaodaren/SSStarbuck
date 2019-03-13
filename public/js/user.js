@@ -1,3 +1,4 @@
+export default function xbk_user(){
 // 鼠标单击显示页面  左侧导航栏
 var click_tit=document.getElementById("click_tit").firstChild;
 // console.log(click_tit);
@@ -36,4 +37,5 @@ username.innerHTML=html;
 function logout(){
     sessionStorage.clear();
     location.replace("http://127.0.0.1:3001");
+};
 };
