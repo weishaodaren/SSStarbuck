@@ -8,4 +8,4 @@
 ![图片名称](https://www.starbucks.com.cn/assets/images/logo.svg) 
 
 
-我的邮箱: king.zjw@qq.com
+我的邮箱: weishaodaren@gmail.com
